@@ -1,9 +1,9 @@
 {
-  "name": "aryan-desai-portfolio",
+  "name": "aryan-desai-cybersec-portfolio",
   "private": true,
   "version": "1.0.0",
   "type": "module",
-  "homepage": "https://shitil99.github.io/shitil-portfolio",
+  "homepage": "https://aryand028.github.io/aryan-desai-cybersec-portfolio",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
