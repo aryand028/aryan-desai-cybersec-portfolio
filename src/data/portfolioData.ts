@@ -7,6 +7,11 @@ const portfolioData = {
     phone: "201-204-7610",
     email: "desaiaryan28@gmail.com",
     linkedin: "http://www.linkedin.com/in/aryandesai28",
+    Introduction: `Achieved industry recognized US DoD compliant CompTIA Security+ CE Certification. On Course of achieving CISSP.
+    25+ Certifications/Courses under Cybersecurity. Holder of Cyber Security Analyst Professional Specialization Certificate offered by IBM.
+    Hardworking and ambitious in life with all schedules organized. Wise decision maker and good learner always eager to learn new skills & procure new challenges.`,
+    Strength: `STRENGTHS: Security Audits, Business Continuity Management, Risk Management, SIEM, Governance, Risk & Compliance [GRC], Network Security, OS Security, Threat and Vulnerability Management, Incident Response & Access Management, Security Analysis, Information Assurance, Cyber Threat Intelligence, Cryptography, Public Key Infrastructure`,
+    SoftSkills: `SOFT SKILLS: Communication, Team Leadership, Problem Solving, Adaptability, Critical Thinking, Decision making, Creative Pitching.`
   },
   skills: {
     "SIEM": ["Splunk", "Wazuh", "IBM Qradar", "Graylog"],
@@ -47,7 +52,7 @@ const portfolioData = {
     },
     {
       degree: "Bachelor of Technology, Electronics Engineering",
-      duration: "June 2019 - May 2023",
+      duration: "August 2019 - May 2023",
       gpa: "8.53/10.00",
       institution: "Mumbai University",
       location: "Mumbai, India",
@@ -117,6 +122,50 @@ const portfolioData = {
     { month: 'Apr', threats: 117, incidents: 101 },
     { month: 'May', threats: 176, incidents: 136 },
     { month: 'Jun', threats: 212, incidents: 173 }
+  ],
+  certifications: [
+    {
+      name: "CompTIA Security+",
+      issuer: "CompTIA",
+      credentialId: "COMP001022599328",
+      status: "Certified"
+    },
+    {
+      name: "IBM Cybersecurity Analyst Professional Specialization",
+      issuer: "IBM",
+      credentialId: "https://www.coursera.org/account/accomplishments/specialization/ZPGXTKFTKR8S",
+      status: "Certified"
+    },
+    {
+      name: "SIEM Engineer",
+      issuer: "LetsDefend",
+      credentialId: "https://app.letsdefend.io//certificate/show/22933913-6847-4621-bd53-c2e795d58a49",
+      status: "Certified"
+    },
+    {
+      name: "Cyber Threat Management",
+      issuer: "Cisco",
+      credentialId: "https://www.credly.com/badges/6588fc10-3f8c-4a0f-89e4-b4688d60ad5e/linked_in_profile",
+      status: "Certified"
+    },
+    {
+      name: "Endpoint Security",
+      issuer: "Cisco",
+      credentialId: "https://www.credly.com/badges/70e8f03a-7721-482d-a7de-1716398f8f90/linked_in_profile",
+      status: "Certified"
+    },
+    {
+      name: "Advanced Digital Forensics",
+      issuer: "Cybrary",
+      credentialId: "https://www.credly.com/badges/0e98e9f8-3427-4445-8609-8501f7e6a8d2/linked_in_profile",
+      status: "Certified"
+    },
+    {
+      name: "More Relevant Certifications",
+      issuer: "Multiple Recognized Organizations",
+      credentialId: "https://www.linkedin.com/in/aryandesai28/details/certifications/",
+      status: "Certified"
+    }
   ],
   projects: [
     {
@@ -198,50 +247,6 @@ const portfolioData = {
         "Detailed real-life case study with research and report on Trinity Health and LinkedIn data breaches with threat modeling, threat analysis and cyber threat intelligence [CTI]. Detailed demonstration of Threat-Asset Matrix & Risk-Control Matrix [RCM]. Individual paper/research on Security Standards & Regulations, Response to Cyberattacks in Ukraine War, Electronic Discovery & Business Impact Analysis."
       ],
       technologies: ["Risk Management", "Business Impact Analysis", "Cyber Threat Intelligence (CTI)", "Unified Threat Management", "E-Discovery"]
-    }
-  ],
-  certifications: [
-    {
-      name: "CompTIA Security+",
-      issuer: "CompTIA",
-      credentialId: "COMP001022599328",
-      status: "Certified"
-    },
-    {
-      name: "IBM Cybersecurity Analyst Professional Specialization",
-      issuer: "IBM",
-      credentialId: "https://www.coursera.org/account/accomplishments/specialization/ZPGXTKFTKR8S",
-      status: "Certified"
-    },
-    {
-      name: "SIEM Engineer",
-      issuer: "LetsDefend",
-      credentialId: "https://app.letsdefend.io//certificate/show/22933913-6847-4621-bd53-c2e795d58a49",
-      status: "Certified"
-    },
-    {
-      name: "Cyber Threat Management",
-      issuer: "Cisco",
-      credentialId: "https://www.credly.com/badges/6588fc10-3f8c-4a0f-89e4-b4688d60ad5e/linked_in_profile",
-      status: "Certified"
-    },
-    {
-      name: "Endpoint Security",
-      issuer: "Cisco",
-      credentialId: "https://www.credly.com/badges/70e8f03a-7721-482d-a7de-1716398f8f90/linked_in_profile",
-      status: "Certified"
-    },
-    {
-      name: "Advanced Digital Forensics",
-      issuer: "Cybrary",
-      credentialId: "https://www.credly.com/badges/0e98e9f8-3427-4445-8609-8501f7e6a8d2/linked_in_profile",
-      status: "Certified"
-    },
-    {
-      name: "More Relevant Certifications",
-      issuer: "Multiple Recognized Organizations",
-      credentialId: "https://www.linkedin.com/in/aryandesai28/details/certifications/",
-      status: "Certified"
     }
   ]
 };

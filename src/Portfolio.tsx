@@ -98,15 +98,26 @@ export function Portfolio() {
   }
 
   return (
-    <div className="space-y-8 px-4 pt-4">
-      {/* Header */}
-      <div className="bg-red border border-green-500/30 rounded-lg p-6 text-center">
-        <h1 className="text-3xl font-bold text-green-400">{portfolioData.personalInfo.name}</h1>
-        <p className="text-blue-400">Cybersecurity Professional</p>
-        <p className="text-blue-400 text-sm">{portfolioData.personalInfo.email}</p>
-        <p className="text-blue-400 text-sm">{portfolioData.personalInfo.location}</p>
-        <p className="text-blue-400 text-sm">{portfolioData.personalInfo.linkedin}</p>
-      </div>
+  <div className="space-y-8 px-4 pt-4">
+    {/* Header */}
+    <div className="bg-red border border-green-500/30 rounded-lg p-6 text-center">
+      <h1 className="text-3xl font-bold text-green-400">{portfolioData.personalInfo.name}</h1>
+      <p className="text-blue-400">Cybersecurity Professional</p>
+      <p className="text-blue-400 text-sm">{portfolioData.personalInfo.email}</p>
+      <p className="text-blue-400 text-sm">{portfolioData.personalInfo.location}</p>
+      <p className="text-blue-400 text-sm mb-4">{portfolioData.personalInfo.linkedin}</p>
+
+      <ul className="list-disc text-green-400 text-sm text-center mx-auto max-w-sm">
+  {portfolioData.personalInfo.Introduction.split('\n').map((line: string, index: number) => (
+    line.trim() && <li key={index}>{line.trim()}</li>
+  ))}
+</ul>
+
+
+      {/* Strength */}
+      <p className="text-blue-400 text-sm mt-6 mb-4">{portfolioData.personalInfo.Strength}</p>
+      <p className="text-green-400 text-sm">{portfolioData.personalInfo.SoftSkills}</p>
+    </div>
 
       {/* System Status */}
       <div className="bg-gray-900 border border-green-500/30 rounded-lg p-4">
@@ -209,18 +220,6 @@ export function Portfolio() {
         ))}
       </Section>
 
-      <Section id="projects" title="🚀 PROJECTS">
-        {portfolioData.projects.map((proj: any, i: number) => (
-          <div key={i} className="mb-4">
-            <h3 className="text-red-400 font-semibold">{proj.title}</h3>
-            <ul className="list-disc ml-5 text-green-400 text-sm">
-              {proj.achievements.map((a: string, j: number) => <li key={j}>{a}</li>)}
-            </ul>
-            <p className="text-blue-400 text-xs mt-1">Tools/Concept Used: {proj.technologies.join(", ")}</p>
-          </div>
-        ))}
-      </Section>
-
       <Section id="certifications" title="🏆 CERTIFICATIONS">
         {portfolioData.certifications.map((cert: any, i: number) => (
           <div key={i} className="mb-2">
@@ -229,6 +228,18 @@ export function Portfolio() {
             {cert.credentialId && (
               <p className="text-blue-400 text-xs">ID: {cert.credentialId}</p>
             )}
+          </div>
+        ))}
+      </Section>
+
+      <Section id="projects" title="🚀 PROJECTS">
+        {portfolioData.projects.map((proj: any, i: number) => (
+          <div key={i} className="mb-4">
+            <h3 className="text-red-400 font-semibold">{proj.title}</h3>
+            <ul className="list-disc ml-5 text-green-400 text-sm">
+              {proj.achievements.map((a: string, j: number) => <li key={j}>{a}</li>)}
+            </ul>
+            <p className="text-blue-400 text-xs mt-1">Tools/Concept Used: {proj.technologies.join(", ")}</p>
           </div>
         ))}
       </Section>
